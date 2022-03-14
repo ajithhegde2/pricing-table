@@ -15,7 +15,7 @@ const Card = ({ item }) => {
             <span className="period">/month</span>
           </h6>
           <hr />
-          <List providedFeature = {item[1].features}/>
+          <List eligible = {item[1].eligible} notEligible = {item[1].notEligible}/>
           <div class="d-grid">
             <button href="#" class="btn btn-primary text-uppercase">
               Button
