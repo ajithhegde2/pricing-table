@@ -18,7 +18,7 @@ const Card = ({ item }) => {
           <hr />
           <ul className="fa-ul">
       {
-      item[1].notEligible.map((ele) => {
+      item[1].eligible.map((ele) => {
         return (
           <li>
             <FontAwesomeIcon icon={faCheck} listItem />
@@ -28,7 +28,7 @@ const Card = ({ item }) => {
       })}
       {item[1].notEligible.map((ele) => {
         return (
-          <li>
+          <li className="text-muted">
             <FontAwesomeIcon icon={faTimes} listItem />
             {ele}
           </li>
