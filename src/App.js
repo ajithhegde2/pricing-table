@@ -1,6 +1,20 @@
+import Card from './Card';
+
+import priceList from "./price";
+
 function App() {
   return (
-    <div>hi</div>
+    <section className="pricing py-5">
+      <div className="container">
+        <div className="row">
+         {
+           Object.entries(priceList).map(item => {
+            return <Card item = {item} />
+           })
+         }
+        </div>
+      </div>
+    </section>
   );
 }
 
